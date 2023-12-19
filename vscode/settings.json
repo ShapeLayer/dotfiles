@@ -1,0 +1,29 @@
+{
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "WSL": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": []
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "WSL"
+}
