@@ -30,6 +30,7 @@
 * ✅ will be installed by `install-runtimes.*`
 
 * ✅ neofetch
+* [Chrome Remote Desktop Host](https://remotedesktop.google.com/support)
 
 ## Office
 * [Microsoft Office (Microsoft 365)](https://www.office.com/)
