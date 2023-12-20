@@ -193,7 +193,7 @@ Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advan
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
 
 # Explorer: Show path in title bar
-Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState" "FullPath" 1
+Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState" "FullPath" 0
 
 # Explorer: Avoid creating Thumbs.db files on network volumes
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" "DisableThumbnailsOnNetworkFolders" 1
@@ -399,6 +399,10 @@ Write-Host "Configuring Accessibility..." -ForegroundColor "Yellow"
 # Turn Off Windows Narrator
 if (!(Test-Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Narrator.exe")) {New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Narrator.exe" -Type Folder | Out-Null}
 Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Narrator.exe" "Debugger" "%1"
+
+# Turn Off Sticky Keys
+Set-ItemProperty "HKCU:\Control Panel\Accessibility\StickyKeys" "Flags" 506
+Set-ItemProperty "HKCU:\Control Panel\Accessibility\ToggleKeys" "Flags" 58
 
 # Disable "Window Snap" Automatic Window Arrangement
 # Set-ItemProperty "HKCU:\Control Panel\Desktop" "WindowArrangementActive" 0
