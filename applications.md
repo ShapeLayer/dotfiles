@@ -36,5 +36,8 @@
 * [Microsoft Office (Microsoft 365)](https://www.office.com/)
 * [Hancom Office](https://www.hancom.com/main/main.do)
 
+## Productivity
+* [Notion](https://notion.so/)
+
 ## Entertainments
 * [Steam](https://store.steampowered.com/)
