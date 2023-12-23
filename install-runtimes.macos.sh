@@ -20,7 +20,7 @@ sh ./runtimes/node.unix.sh
 
 # Install Rust
 brew install rustup rust
-source '$HOME/.cargo/env'
+source "$HOME/.cargo/env"
 rustup update
 
 # Install utilities
