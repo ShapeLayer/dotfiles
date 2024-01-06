@@ -1,0 +1,5 @@
+config login
+        option username '<ACCOUNT_NAME>'
+        option password '$p$<ACCOUNT_NAME>'
+        list read '*'
+        list write '*'

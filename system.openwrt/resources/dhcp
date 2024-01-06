@@ -1,0 +1,5 @@
+config host
+        option ip '<STATIC_LEASE_IP>'
+        option name '<STATIC_LEASE_TARGET_NAME>'
+        option dns '1'
+        option mac '<STATIC_LEASE_TARGET_MAC_ADDRESS>'
