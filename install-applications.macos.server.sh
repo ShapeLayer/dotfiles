@@ -27,5 +27,7 @@ rustup update
 # Install utilities
 brew install neofetch
 brew install podman
+mkdir -p $HOME/.config/containers
+echo 'unqualified-search-registries=["docker.io", "quay.io"]' > $HOME/.config/containers/registries.conf
 
 source ~/.bashrc
