@@ -13,7 +13,7 @@ podman pull jacobsmile/tmodloader1.4:latest
 podman run -p 7777:7777 --name tmodloader --rm \
   -v ./data:/data \
   -e TMOD_AUTOSAVE_INTERVAL=$TMOD_AUTOSAVE_INTERVAL \
-  -e TMOD_MOTD=$TMOD_MOTD \
+  -e TMOD_MOTD="$TMOD_MOTD" \
   -e TMOD_PASS=$TMOD_PASS \
   -e TMOD_MAXPLAYERS=$TMOD_MAXPLAYERS \
   -e TMOD_WORLDNAME=$TMOD_WORLDNAME \
