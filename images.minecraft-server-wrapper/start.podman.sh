@@ -41,6 +41,7 @@ podman run -it --name $INSTANCE_NAME \
   --memory=$INSTANCE_MEMORY_LIMIT \
   --memory-reservation=$INSTANCE_MEMORY_RESERVATION \
   --restart=on-failure:3 \
+  --annotation run.oci.keep_original_groups=1 --userns=keep-id \
   -e INIT_MEMORY=$MINECRAFT_MIN_MEMORY \
   -e MIN_RAM=$MINECRAFT_MIN_MEMORY \
   -e MAX_MEMORY=$MINECRAFT_MAX_MEMORY \
