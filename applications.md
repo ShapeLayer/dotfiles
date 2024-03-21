@@ -5,6 +5,9 @@
 * [Bandizip](https://bandisoft.com/bandizip/)
 * [(win) HoneyView](https://bandisoft.com/honeyview/)
 * [(win) PotPlayer](https://tv.kakao.com/guide/potplayer)
+* [(macos) Karabiner](https://github.com/pqrs-org/Karabiner-Elements/releases)  
+  * for keyboard remapping
+* [(macos) Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser/releases)  
 
 ## Developing
 * [Visual Studio Code](https://code.visualstudio.com/)
