@@ -18,6 +18,8 @@ sh ./runtimes/node.unix.sh
 # Install Java
 sudo apt install jenv
 apt install openjdk@17
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bashrc
+echo '  eval "$(jenv init -)"' >> ~/.bashrc
 # jenv add
 
 # Install Rust

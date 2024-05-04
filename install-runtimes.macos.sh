@@ -21,6 +21,8 @@ sh ./runtimes/node.unix.sh
 # Install Java
 brew install jenv
 brew install openjdk@17
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo '  eval "$(jenv init -)"' >> ~/.zshrc
 jenv add /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
 
 # Install Rust
