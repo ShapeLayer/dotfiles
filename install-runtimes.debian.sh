@@ -15,6 +15,11 @@ curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$nvm_latest/install.sh" |
 cat ./runtimes/node | bash
 sh ./runtimes/node.unix.sh
 
+# Install Java
+sudo apt install jenv
+apt install openjdk@17
+# jenv add
+
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source '$HOME/.cargo/env'

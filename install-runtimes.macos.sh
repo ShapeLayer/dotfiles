@@ -18,6 +18,11 @@ brew install nvm
 cat ./runtimes/node | bash
 sh ./runtimes/node.unix.sh
 
+# Install Java
+brew install jenv
+brew install openjdk@17
+jenv add /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+
 # Install Rust
 brew install rustup rust
 source "$HOME/.cargo/env"
