@@ -1,5 +1,7 @@
 brew install iterm2
 
+sh iterm2.icon.sh
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc.env
 echo "source ~/.zshrc.env" >> ~/.zshrc
