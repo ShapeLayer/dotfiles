@@ -1,0 +1,4 @@
+location /.well-known/acme-challenge/ {
+	index off;
+	alias /path/to/some/safe/www/writable/place/.well-known/acme-challenge/;
+}

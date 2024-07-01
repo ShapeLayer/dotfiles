@@ -1,0 +1,17 @@
+http {
+	server {
+		# listen   1-1000;
+		listen 80;
+		server_name  <server-name>;
+
+		access_log  off;
+
+		location / {
+			include    local/proxy_set_header;
+			proxy_pass $scheme://<forward-to>:$server_port;
+			add_header Strict-Transport-Security
+				"max-age=31536000; includeSubDomains"
+				always;
+		}
+	}
+}
