@@ -1,0 +1,2 @@
+cd [/etc/wireguard]
+wg genkey | tee privatekey-[target] | wg pubkey > publickey-[target]
