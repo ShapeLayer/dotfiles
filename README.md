@@ -2,7 +2,7 @@
 
 * [Applications need to be installed manually](./applications.md)
 
-## Script Requirements
+## Requirements
 
 **PowerShell**
 
