@@ -1,0 +1,12 @@
+# cc installed from homebrew
+build --action_env CC=/opt/homebrew/opt/llvm/bin/clang
+build --action_env CXX=/opt/homebrew/opt/llvm/bin/clang++
+
+# cc includes Xcode toolchain is additional management/adjust required for includes.
+# build --action_env CC=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+# build --action_env CXX=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+
+# The gnu libtool command line is not compatible with the libtool command written by bazel for MacOS.
+build --action_env=LIBTOOL=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool
+test --action_env=LIBTOOL=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool
+  
